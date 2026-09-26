@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>System Monitor</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class="dashboard">
+
+		<div class="card">
+			<h2>CPU</h2>
+
+			<div class="label">Usage</div>
+			<div class="metric" id="cpu-usage">--</div>
+		</div>
+
+		<div class="card">
+			<h2>GPU</h2>
+
+			<div class="label">Usage></div>
+			<div class="metric" id="gpu-usage">--</div>
+		</div>
+
+		<div class="card">
+			<h2>Memory</h2>
+
+			<div class="label">Usage</div>
+			<div class="metric" id="ram-usage">--</div>
+		</div>
+
+	</div>
+		
+	<script type="module" src="server.js"></script>
+</body>
+</html>
